@@ -3,6 +3,7 @@ import "./Register.css";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./firebase";
 import { FaInfo } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Register = () => {
   const navigate = useNavigate();
@@ -55,6 +56,18 @@ const Register = () => {
     setIsPasswordFocused(false);
   };
 
+  const [showPassword, setShowPassword] = useState(false); // State to show/hide password
+
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
+  };
+
+  const [displayPassword, setDisplayPassword] = useState(false); // State to show/hide password
+
+  const togglePasswordDisplay = () => {
+    setDisplayPassword((prevDisplayPassword) => !prevDisplayPassword);
+  };
+
   return (
     <div className="register">
       <Link to="/amazon-clone">
@@ -77,7 +90,7 @@ const Register = () => {
 
           <h5>Password</h5>
           <input
-            type="password"
+            type={displayPassword ? "text" : "password"}
             placeholder="At least 6 characters"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -89,6 +102,15 @@ const Register = () => {
                 passwordError && isPasswordFocused ? "3px solid pink" : "none",
             }}
           />
+
+          <i
+            className={`password-toggle-icon ${
+              showPassword ? <FaEyeSlash /> : <FaEye />
+            }`}
+            onClick={togglePasswordVisibility}
+          >
+            {showPassword ? <FaEye /> : <FaEyeSlash />}
+          </i>
 
           {passwordError && (
             <p className="password__error">
@@ -105,7 +127,7 @@ const Register = () => {
 
           <h5>Re-enter Password</h5>
           <input
-            type="password"
+            type={displayPassword ? "text" : "password"}
             value={reEnteredPassword}
             onChange={(e) => setReEnteredPassword(e.target.value)}
             onFocus={handlePasswordFocus}
@@ -116,6 +138,15 @@ const Register = () => {
                 passwordError && isPasswordFocused ? "3px solid pink" : "none",
             }}
           />
+
+          <i
+            className={`password-toggle-icon ${
+              showPassword ? <FaEyeSlash /> : <FaEye />
+            }`}
+            onClick={togglePasswordDisplay}
+          >
+            {showPassword ? <FaEye /> : <FaEyeSlash />}
+          </i>
 
           {errorMessage && (
             <p className="error__message">

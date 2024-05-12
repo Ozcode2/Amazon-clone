@@ -124,6 +124,13 @@ input:focus{
     color: #c45500;
 }
 
+.password-toggle-icon {
+    position: relative;
+    top: -38px;
+    right: 5%;
+    float: right;
+}
+
 @media(max-width: 340px){
     .login{
         transform: scale(0.7);

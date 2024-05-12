@@ -1,18 +1,23 @@
 import "./Header.css";
-import { Link } from "react-router-dom";
-import { FaSearch, FaShoppingBasket } from "react-icons/fa";
+import { Link, useLocation } from "react-router-dom";
+import { FaSearch, FaMapMarkerAlt, FaShoppingBasket } from "react-icons/fa";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import { useUser } from "./UserContext";
 
 function Header({ setSearchQuery }) {
   const [{ basket, user }, dispatch] = useStateValue();
   const { userData, clearUserData } = useUser();
+  const location = useLocation();
 
   const handleSearch = (event) => {
-    setSearchQuery(event.target.value); // Update search query
-    // You may add logic here to trigger search based on user input
+    // setSearchQuery(event.target.value); // Update search query
+    // Check if the user is in the checkout route and prevent updating the search query
+    if (
+      !(location.pathname === "/checkout" || location.pathname === "/orders")
+    ) {
+      setSearchQuery(event.target.value);
+    }
   };
 
   const handleAuthentication = () => {
@@ -24,7 +29,7 @@ function Header({ setSearchQuery }) {
 
   return (
     <nav className="header">
-      <Link to="/amazon-clone">
+      <Link to="https://ozcode2.github.io/amazon-clone/">
         <img
           className="header__logo"
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
@@ -43,13 +48,13 @@ function Header({ setSearchQuery }) {
       )}
 
       <div className="header__search">
-          <input
-            type="search"
-            placeholder="Search Amazon"
-            className="header__searchInput"
-            onChange={handleSearch}
-          />
-          <FaSearch className="header__searchIcon" />
+        <input
+          type="search"
+          placeholder="Search Amazon"
+          className="header__searchInput"
+          onChange={handleSearch}
+        />
+        <FaSearch className="header__searchIcon" />
       </div>
 
       <div className="header__nav">

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Login.css";
 import { Link, useNavigate } from "react-router-dom";
 import { auth } from "./firebase";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -21,6 +22,18 @@ const Login = () => {
 
   const toRegisterPage = () => {
     navigate("/register");
+  };
+
+  const [showPassword, setShowPassword] = useState(false); // State to show/hide password
+
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevShowPassword) => !prevShowPassword);
+  };
+
+  const [displayPassword, setDisplayPassword] = useState(false); // State to show/hide password
+
+  const togglePasswordDisplay = () => {
+    setDisplayPassword((prevDisplayPassword) => !prevDisplayPassword);
   };
 
   return (
@@ -45,10 +58,19 @@ const Login = () => {
 
           <h5>Password</h5>
           <input
-            type="password"
+            type={showPassword ? "text" : "password"}
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
+
+          <i
+            className={`password-toggle-icon ${
+              showPassword ? <FaEyeSlash /> : <FaEye />
+            }`}
+            onClick={togglePasswordVisibility}
+          >
+            {showPassword ? <FaEye /> : <FaEyeSlash />}
+          </i>
 
           <button
             className="login__signInButton"

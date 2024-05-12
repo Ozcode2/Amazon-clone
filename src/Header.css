@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Amazon+Ember&display=swap");
+
 .header{
     background-color: #131921;
     display: flex;
@@ -10,6 +12,7 @@
     flex-direction: row;
     padding-top: 5px;
     padding-bottom: 5px;
+    font-family: 'Amazon Ember', Arial, sans-serif;
 }
 
 .header__logo {
@@ -20,15 +23,29 @@
     margin-top: 18px;
 }
 
-.header__optionBasket{
+.header__optionBasket {
     display: flex;
     align-items: center;
+    position: relative;
     font-size: 30px;
 }
 
-.header__basketCount{
-    margin-left: 10px;
-    margin-right: 10px;
+.header__optionBasket .header__basketCount {
+    color: #f08804;
+    padding: 4px 2px;
+    font-size: 15px;
+    line-height: 16px;
+    width: 19px;
+    position: absolute;
+    top: -8px;
+    right: 4px;
+    border-radius: 50%;
+}
+
+.header__optionBasket svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
 .header__nav{
@@ -45,6 +62,7 @@
 
 .header__optionLineOne{
     font-size: 10px;
+    font-weight: bold;
 }
 
 .header__optionLineTwo{
@@ -94,13 +112,10 @@
 
 .header__searchInput::placeholder{
     font-weight: 600;
+    font-size: 14px;
 }
 
-.header__basketCount{
-    color: orange;
-}
-
-.user__location{
+.user__location {
     color: #ffffff;
     display: block;
     padding: 20px;

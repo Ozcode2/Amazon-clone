@@ -82,19 +82,17 @@ const Home = ({ searchQuery }) => {
           />
         </div>
         <div>
-          {/* Your second image */}
           <img
             className="home__imageOne"
             alt=""
-            src="	https://m.media-amazon.com/images/I/61CiqVTRBEL._SX3000_.jpg"
+            src="https://m.media-amazon.com/images/I/61CiqVTRBEL._SX3000_.jpg"
           />
         </div>
         <div>
-          {/* Your third image */}
           <img
             className="home__imageTwo"
             alt=""
-            src="	https://m.media-amazon.com/images/I/71YFuAhOPKL._SX3000_.jpg"
+            src="https://m.media-amazon.com/images/I/71YFuAhOPKL._SX3000_.jpg"
           />
         </div>
       </Slider>

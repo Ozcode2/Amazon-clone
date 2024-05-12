@@ -14,6 +14,7 @@ import Orders from "./Orders";
 import Header from "./Header";
 import Register from "./Register";
 import RecoverPassword from "./RecoverPassword";
+import Footer from "./Footer";
 
 const promise = loadStripe(
   "pk_test_51OFbvaF6wyEfqsLkFf90knhsjHreUkPKnx1jraH2XnnEqKOsoumRyUPxvi0W4fzJbC0VIfzPFtwjqd6sghOiMl5i00lshS9iHA"
@@ -87,6 +88,7 @@ function App() {
               <React.Fragment>
                 <Header setSearchQuery={setSearchQuery} />
                 <Home searchQuery={searchQuery} />
+                <Footer />
               </React.Fragment>
             }
           />
