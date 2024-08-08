@@ -65,6 +65,20 @@ const Home = ({ searchQuery }) => {
       image:
         "https://images-na.ssl-images-amazon.com/images/I/71-o7Rap2HL._AC_UL160_SR160,160_.jpg",
     },
+    {
+      id: "14682945",
+      title: "PlayStation®5 console (slim)",
+      price: 499.99,
+      rating: 3,
+      image: "https://m.media-amazon.com/images/I/41HMaO9jO3L._SL1000_.jpg",
+    },
+    {
+      id: "36770622",
+      title: "Skechers Men's Stamina at Upper Stitch Sneaker",
+      price: 54.99,
+      rating: 5,
+      image: "https://m.media-amazon.com/images/I/710U89BdbCL._AC_SX575_.jpg",
+    },
   ];
 
   const filteredProducts = products.filter((product) =>

@@ -79,7 +79,7 @@ function App() {
             }
           />
           <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
+          <Route path="/amazon-clone/register" element={<Register />} />
           <Route path="/recover-password" element={<RecoverPassword />} />
           <Route
             exact

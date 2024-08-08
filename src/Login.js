@@ -21,7 +21,7 @@ const Login = () => {
   };
 
   const toRegisterPage = () => {
-    navigate("/register");
+    navigate("/amazon-clone/register");
   };
 
   const [showPassword, setShowPassword] = useState(false); // State to show/hide password

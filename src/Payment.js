@@ -77,7 +77,7 @@ export const Payment = () => {
             state: userData.state,
             zipCode: userData.zipCode,
           });
-
+        
         setSucceeded(true);
         setError(null);
         setProcessing(false);
