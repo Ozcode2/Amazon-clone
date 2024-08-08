@@ -37,7 +37,7 @@ const Home = ({ searchQuery }) => {
       id: "36365134",
       title:
         "SKG Smart Watch, Fitness Tracker with 5ATM Swimming Waterproof, Touch Screen Bluetooth Smartwatch Fitness Watch for Android-iPhone iOS, V7",
-      price: 49.95,
+      price: 59.95,
       rating: 3,
       image:
         "https://m.media-amazon.com/images/I/71JU-bUt-sL._AC_UY436_FMwebp_QL65_.jpg",
@@ -45,7 +45,7 @@ const Home = ({ searchQuery }) => {
     {
       id: "46551172",
       title: "Oppenheimer [DVD]",
-      price: 31.96,
+      price: 71.96,
       rating: 5,
       image:
         "https://m.media-amazon.com/images/I/51IIKyH8cAL._SX300_SY300_QL70_FMwebp_.jpg",
@@ -60,7 +60,7 @@ const Home = ({ searchQuery }) => {
     {
       id: "94382256",
       title: "Call of Duty: Vanguard",
-      price: 36.11,
+      price: 36.41,
       rating: 4,
       image:
         "https://images-na.ssl-images-amazon.com/images/I/71-o7Rap2HL._AC_UL160_SR160,160_.jpg",
