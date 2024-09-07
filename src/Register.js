@@ -72,6 +72,7 @@ const Register = () => {
     <div className="register">
       <Link to="/">
         <img
+          alt=""
           className="register__logo"
           src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
         />
