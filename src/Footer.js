@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="footer">
       <div className="footer-container">
         <div className="footer__socialMedia">
-          <a href="/amazon-clone" target="_blank" rel="noreferrer">
+          <a href="/" target="_blank" rel="noreferrer">
             <div className="footer__x">
               <FontAwesomeIcon
                 className="footer__socialIcon"
@@ -20,7 +20,7 @@ const Footer = () => {
             </div>
           </a>
 
-          <a href="/amazon-clone" target="_blank" rel="noreferrer">
+          <a href="/" target="_blank" rel="noreferrer">
             <div className="footer__x">
               <img
                 height={20}
@@ -32,30 +32,31 @@ const Footer = () => {
             </div>
           </a>
 
-          <a href="/amazon-clone" target="_blank" rel="noreferrer">
+          <a href="/" target="_blank" rel="noreferrer">
             <div className="footer__x">
               <FaGlobe className="footer__socialIcon" />
             </div>
           </a>
 
-          <a href="/amazon-clone" target="_blank" rel="noreferrer">
+          <a href="/" target="_blank" rel="noreferrer">
             <div className="footer__x">
               <FaApple className="footer__socialIcon" />
             </div>
           </a>
 
-          <a href="/amazon-clone" target="_blank" rel="noreferrer">
+          <a href="/" target="_blank" rel="noreferrer">
             <div className="footer__x">
               <img
                 width="20"
                 height="20"
                 src="https://img.icons8.com/ios-glyphs/66a8f0/android-os.png"
                 alt="android-os"
+                className="footer__socialIcon"
               />
             </div>
           </a>
 
-          <a href="/amazon-clone" target="_blank" rel="noreferrer">
+          <a href="/" target="_blank" rel="noreferrer">
             <div className="footer__x">
               <img
                 width="20"

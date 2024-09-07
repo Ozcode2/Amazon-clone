@@ -42,7 +42,7 @@ const Register = () => {
       .then((auth) => {
         console.log(auth);
         if (auth) {
-          navigate("/amazon-clone");
+          navigate("/");
         }
       })
       .catch((error) => alert(error.message));
@@ -70,7 +70,7 @@ const Register = () => {
 
   return (
     <div className="register">
-      <Link to="/amazon-clone">
+      <Link to="/">
         <img
           className="register__logo"
           src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"

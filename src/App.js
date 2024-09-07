@@ -83,7 +83,7 @@ function App() {
           <Route path="/recover-password" element={<RecoverPassword />} />
           <Route
             exact
-            path="/amazon-clone"
+            path="/"
             element={
               <React.Fragment>
                 <Header setSearchQuery={setSearchQuery} />

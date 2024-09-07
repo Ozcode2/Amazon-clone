@@ -26,7 +26,7 @@ const RecoverPassword = () => {
 
   return (
     <div className="recoverPassword">
-      <Link to="/amazon-clone">
+      <Link to="/">
         <img
           className="recoverPassword__logo"
           src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"

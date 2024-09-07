@@ -1,7 +1,6 @@
 {
   "name": "amazon-clone",
   "version": "0.1.0",
-  "homepage": "https://Ozcode2.github.io/amazon-clone",
   "private": true,
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",

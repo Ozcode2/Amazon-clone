@@ -50,7 +50,7 @@ h2{
 .slick-next{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: scale(2) !important;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;
@@ -67,7 +67,7 @@ h2{
 .slick-prev{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    transform: scale(2) !important;
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 50%;

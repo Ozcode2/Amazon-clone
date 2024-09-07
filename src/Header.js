@@ -29,7 +29,7 @@ function Header({ setSearchQuery }) {
 
   return (
     <nav className="header">
-      <Link to="https://ozcode2.github.io/amazon-clone/">
+      <Link to="/">
         <img
           className="header__logo"
           src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
