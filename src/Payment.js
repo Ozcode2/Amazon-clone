@@ -4,7 +4,7 @@ import { useStateValue } from "./StateProvider";
 import CheckoutProduct from "./CheckoutProduct";
 import { Link, useNavigate } from "react-router-dom";
 import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
-import CurrencyFormat from "react-currency-format";
+import { NumericFormat } from "react-number-format";
 import { getBasketTotal } from "./reducer";
 import axios from "./axios";
 import { db } from "./firebase";
@@ -149,7 +149,7 @@ export const Payment = () => {
               <CardElement onChange={handleChange} />
 
               <div className="payment__priceContainer">
-                <CurrencyFormat
+                <NumericFormat
                   renderText={(value) => <h3>Order Total: {value}</h3>}
                   decimalScale={2}
                   value={getBasketTotal(basket)}
