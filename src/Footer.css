@@ -47,6 +47,8 @@
     font-size: 13px;
 }
 
-
-
-
+@media(max-width: 340px) {
+    .footer > * {
+        transform: scale(0.7);
+    }
+}
